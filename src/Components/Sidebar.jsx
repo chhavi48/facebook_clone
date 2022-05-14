@@ -1,8 +1,12 @@
 import React from 'react'
 import "./Sidebar.css"
+import Sidebarrow from './Sidebarrow'
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className='sidebar'>Sidebar
+    <Sidebarrow title="pages"/>
+    <Sidebarrow title="friends"/>
+    </div>
   )
 }
 
