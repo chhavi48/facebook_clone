@@ -41,6 +41,12 @@
 .heder_option:hover> .MuiSvgIcon-root{
     color:blue;
 }
+.header__option__active> .MuiSvgIcon-root{
+    color:#2e81f4;
+    }
+.header__option__active{
+    border-bottom: 4px solid #2e81f4;
+}
 .heder_option{
     display: flex;
     align-items: center;
@@ -48,7 +54,7 @@
     cursor: pointer;
 
 }
-.heder_option:hover{
+.heder_option:hover>.MuiSvgIcon-root{
   background-color: #eff5ef;
   border-radius: 10px;
   align-items: center;
@@ -56,6 +62,7 @@
   border-bottom: none;
 
 }
+
 .header_info{
     display: flex;
     align-items: center;

@@ -18,23 +18,28 @@ const Header = () => {
         <img src='https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png'/>
         <div className="header_input">
             <SearchIcon/>
-            <input type="text"></input>
+            <input placeholder="Search Facebook"type="text"></input>
         </div>
     </div>
     <div className="header_center">
-        <div className="heder_option">
+        <div className="heder_option
+        header__option__active">
         <HomeIcon fontSize='large'/>
         </div>
-        <div className="heder_option">
+        <div className="heder_option
+        ">
         <FlagIcon fontSize='large'/>
         </div>
-        <div className="heder_option">
+        <div className="heder_option
+        ">
         <SubscriptionsIcon fontSize='large'/>
         </div>
-        <div className="heder_option">
+        <div className="heder_option
+        ">
         <StorefrontIcon fontSize='large'/>
         </div>
-        <div className="heder_option">
+        <div className="heder_option
+        ">
         <SupervisedUserCircleIcon fontSize='large'/>
         </div>
     </div>
