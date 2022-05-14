@@ -35,3 +35,34 @@
     justify-content: center;
 
 }
+.heder_option> .MuiSvgIcon-root{
+    color:gray;
+}
+.heder_option:hover> .MuiSvgIcon-root{
+    color:blue;
+}
+.heder_option{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+
+}
+.heder_option:hover{
+  background-color: #eff5ef;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+
+}
+.header_info{
+    display: flex;
+    align-items: center;
+}
+.header_info> h4{
+    margin-left: 10px;
+}
+.header_right{
+    display: flex;
+}

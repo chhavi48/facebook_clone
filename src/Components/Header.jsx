@@ -21,7 +21,7 @@ const Header = () => {
             <input type="text"></input>
         </div>
     </div>
-    <div className="header_middle">
+    <div className="header_center">
         <div className="heder_option">
         <HomeIcon fontSize='large'/>
         </div>
