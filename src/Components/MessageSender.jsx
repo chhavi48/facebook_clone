@@ -12,7 +12,7 @@ const MessageSender = () => {
   return (
     <div className='msgsender'>
         <div className="msgsender-top">
-  <Avatar/>
+  <Avatar src="https://pbs.twimg.com/profile_images/1451523037040283651/iDf18qJ2_400x400.jpg"/>
       <form>
           <input className="msgsender_input"
           placeholder={"what's on your mind"}

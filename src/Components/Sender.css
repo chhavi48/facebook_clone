@@ -36,3 +36,11 @@
     display: flex;
     justify-content: space-evenly;
 }
+.msgsender_option{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+    
+}
