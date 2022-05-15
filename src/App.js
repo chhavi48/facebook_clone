@@ -2,6 +2,7 @@
 import './App.css';
 import Feed from './Components/Feed';
 import Header from './Components/Header';
+// import MessageSender from './Components/MessageSender';
 import Sidebar from './Components/Sidebar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className='app_body'>
       <Sidebar/>
       <Feed/>
+     
     </div>
     </div>
   );
