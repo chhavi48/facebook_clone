@@ -1,6 +1,10 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Sender.css"
+import VideocamIcon from '@mui/icons-material/Videocam';
+import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+
 const MessageSender = () => {
     const handlesubmit = e =>{
         e.preventDefault();
@@ -19,7 +23,18 @@ const MessageSender = () => {
       </form>
         </div>
         <div className="msgsender-bottom">
-
+       <div className="msgsender_option">
+           <VideocamIcon style={{color:"red"}}/>
+           <h3>Video Live</h3>
+           </div>
+           <div className="msgsender_option">
+           <PhotoLibraryIcon style={{color:"green"}}/>
+           <h3>PhotoVideo</h3>
+           </div>
+           <div className="msgsender_option">
+           <InsertEmoticonIcon style={{color:"orange"}}/>
+           <h3>Feeling/Activity</h3>
+       </div>
         </div>
     </div>
   )
