@@ -1,3 +1,6 @@
 .app_body{
     display: flex;
 }
+.App{
+    background-color: rgb(238, 237, 237);
+}
