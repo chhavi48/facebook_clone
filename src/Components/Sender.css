@@ -44,3 +44,12 @@
     margin: 5px;
     
 }
+.msgsender_option >h3{
+    font-size: medium;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.msgsender_option:hover{
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
