@@ -1,0 +1,26 @@
+
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+.login >div >img{
+    object-fit: contain;
+    height: 150px;
+}
+.login >div{
+    display: flex;
+    flex-direction: column;
+}
+.login >button{
+    width: 300px;
+    background-color: #3987e6;
+    color:#eff2f5;
+    font-size: 15px;
+
+}
+.login >button:hover{
+    background-color: white;
+    color:#2e81f4;
+}

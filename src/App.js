@@ -8,7 +8,7 @@ import Sidebar from './Components/Sidebar';
 import Widgets from './Components/Widgets';
 
 function App() {
-  const user="chhavi";
+  const user=null;
 
   return (
     <div className="App">
