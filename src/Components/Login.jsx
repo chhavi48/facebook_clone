@@ -1,11 +1,18 @@
 import { Button } from '@mui/material';
 import React from 'react';
- import  {auth, provider} from "../firebase";
+import {auth,provider} from "../firebase"
+import { signInWithPopup } from 'firebase/auth';
 import "./Login.css";
 const Login = () => {
     const signin = () =>{
-       auth.signInWithPopup(provider)
-    }
+       signInWithPopup(auth,provider).then((
+         result =>{
+           console.log(result)
+         }
+       )
+       )
+        }
+
   return (
     <div className='login'>
         <div className="login_logo">
