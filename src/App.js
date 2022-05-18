@@ -6,9 +6,11 @@ import Login from './Components/Login';
 // import MessageSender from './Components/MessageSender';
 import Sidebar from './Components/Sidebar';
 import Widgets from './Components/Widgets';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  const user=null;
+  const [{user},dispatch]= useStateValue();
+  // const user=null;
 
   return (
     <div className="App">

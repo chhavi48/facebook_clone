@@ -2,15 +2,22 @@ import { Button } from '@mui/material';
 import React from 'react';
 import {auth,provider} from "../firebase"
 import { signInWithPopup } from 'firebase/auth';
+//  import { ActionTypes } from './Reducer';
+import { actionTypes } from '../Reducer';
 import "./Login.css";
+import { useStateValue } from '../StateProvider';
 const Login = () => {
-    const signin = () =>{
-       signInWithPopup(auth,provider).then((
-         result =>{
-           console.log(result)
-         }
-       )
-       )
+  const[state,dispatch]=useStateValue()
+    const signIn = () =>{
+       
+      signInWithPopup(auth,provider)
+      .then((result)=>{
+        dispatch({
+          type:actionTypes.SET_USER,
+          user:result.user,
+        });
+        // console.log(result.user)
+      }).catch(error=>alert(error.message))
         }
 
   return (
@@ -20,7 +27,7 @@ const Login = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoW4yDx4gnD6oIBVEK230BqF7Oig0yR6XDw&usqp=CAU"/>
        
         </div>
-    <Button type="submit" onClick={signin}>
+    <Button type="submit" onClick={signIn}>
         Sign In
     </Button>
     </div>
