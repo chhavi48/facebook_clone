@@ -11,8 +11,11 @@ import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MessageIcon from '@mui/icons-material/Message';
 import { Avatar, IconButton } from '@mui/material';
+import { useStateValue } from '../StateProvider';
 const Header = () => {
+    const[{user},dispatch]=useStateValue();
   return (
+    
   <div className='header'>
     <div className="header_left">
         <img src='https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png'/>
@@ -45,8 +48,8 @@ const Header = () => {
     </div>
     <div className="header_right">
         <div className="header_info">
-            <Avatar src="https://pbs.twimg.com/profile_images/1451523037040283651/iDf18qJ2_400x400.jpg"/>
-            <h4>Chhavi Srivastva</h4>
+            <Avatar src={user.photoURL}/>
+            <h4>"chhavi"</h4>
            <IconButton>
                <MessageIcon/>
                <AddIcon/>

@@ -8,10 +8,13 @@ import ChatIcon from '@mui/icons-material/Chat';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useStateValue } from '../StateProvider';
 const Sidebar = () => {
+  const[{user},dispatch]=useStateValue()
   return (
     <div className='sidebar'>Sidebar
-    <Sidebarrow src='https://pbs.twimg.com/profile_images/1451523037040283651/iDf18qJ2_400x400.jpg' title="Chhavi Srivastva"/>
+    <Sidebarrow src={user.photoURL}
+     title={user.displayName}/>
     <Sidebarrow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
     <Sidebarrow Icon={EmojiFlagsIcon} title="Pages"/>
     <Sidebarrow Icon={PeopleOutlineIcon} title="Friends"/>

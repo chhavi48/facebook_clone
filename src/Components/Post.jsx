@@ -15,7 +15,8 @@ const Post = ({profilePic,image,username,timestamp,
             className="post_avtar"/>
             <div className="post_topinfo">
                 <h3>{username}</h3>
-                <p>Timestamp...</p>
+                {/* <p>{new Date(timestamp?.toDate()).toUTCString()}</p> */}
+                <p>timetamp...</p>
             </div>
         </div>
         <div className="post_bottom">

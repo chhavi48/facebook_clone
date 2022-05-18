@@ -4,8 +4,9 @@ import "./Sender.css"
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
-
+import { useStateValue } from '../StateProvider';
 const MessageSender = () => {
+  const[{user},dispatch]=useStateValue()
     const[input,setinput]=useState("");
     const[imageUrl,setimageUrl]=useState("")
     const handlesubmit = e =>{
@@ -17,13 +18,13 @@ const MessageSender = () => {
   return (
     <div className='msgsender'>
         <div className="msgsender-top">
-  <Avatar src="https://pbs.twimg.com/profile_images/1451523037040283651/iDf18qJ2_400x400.jpg"/>
+  <Avatar src={user.photoURL}/>
       <form>
           <input 
           value={input}
           onChange={(e)=>setinput(e.target.value)}
           className="msgsender_input"
-          placeholder={"what's on your mind ?"}
+          placeholder={`what's on your mind ? ${user.displayName}`}
           />
  <input 
   value={imageUrl}
