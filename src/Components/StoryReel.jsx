@@ -4,8 +4,9 @@ import "./StoryReel.css"
 const StoryReel = () => {
   return (
     <div className='storyreel'>
-    <Story
-    image="https://media-exp1.licdn.com/dms/image/C4D03AQEDXJKnYe9QCw/profile-displayphoto-shrink_200_200/0/1647835085087?e=1655942400&v=beta&t=Adhs1TT9S37ppv1utC8gSgZTVQcbJoVl9fiFiVl8im4"
+    <Story.
+    
+    image="https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg"
     profilepic="https://pbs.twimg.com/profile_images/1451523037040283651/iDf18qJ2_400x400.jpg"
     title="chhavi"/>
      <Story
