@@ -1,7 +1,11 @@
 
 
 // import "firebase": "^9.8.1",
-
+<h1>hiii🖐🖐</h1>
+  <h3> i just clone the FACEBOOK and for cloneing the website As techtools i used</h2>
+   <h4>react js</h4>
+   <h4>firebase </h4>
+   <h4>facebook plug-in</h4>
 
 https://user-images.githubusercontent.com/77965216/178108862-6a8bbeb7-fb7d-4374-a6f9-93595345a2eb.mp4
 
